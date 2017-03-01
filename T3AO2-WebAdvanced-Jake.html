@@ -1,0 +1,191 @@
+<h1 align=center> Second webpage about Cats </h1>
+<br>
+<br>
+<input type=button value="To Google" onclick="{
+
+ location= 'http://www.google.ca'
+ 
+ }"><br>
+
+<style>
+body {
+   background-color:orange;
+}
+   
+   
+</style>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5dsGWM5XGdg" frameborder="0" allowfullscreen></iframe>
+
+
+
+<h1 align=center><b> Cats are </b>
+<b style="width:200px;height:100px;padding:10px;border:10px solid magenta;">AMAZINGish</b>
+   
+</h1>
+
+<br>
+
+<br>
+<br>
+enter x <input type=text id="tenthX" value="3">
+
+<input type="button" value="test" onclick="{
+
+   x = document.getElementById('tenthX').value
+   
+   if (x == 3){
+      myTemp = 'x is 3'
+   } else if (x < 3){
+        myTemp = 'x is less than 3'
+       } else if (x > 3){
+          myTemp = 'x is more than 3'
+         }
+         
+   if (x > 1){
+      myTemp = 'x is greater than 1'
+   }
+   
+   if (x != 3){
+      myTemp = 'x does not equal 3'
+   }
+   
+   document.getElementById('myOutmost').innerHTML = myTemp
+   
+}"></input>
+
+<div id="myOutmost">   </div>
+<br>
+<br>
+
+
+Use this slider to obtain information about cats. <input type=range id="myX" value="50">
+
+<input type="button" value="random information" onclick="{
+   
+   x = document.getElementById('myX').value
+   
+   if (x==50){
+      myTemp = 'Cats are majestic little animals. They annoy many people, but many also enjoy the company of cats'
+   } else if (x < 50) {
+        myTemp = 'Cats are good at keeping company. Many people have them for company whenever they go off to college or univeristy if the live off campus on their own.'
+      } else if (x > 50) {
+         myTemp = 'Cats are excellent in the barns of farms. They can take care of all of the mice that run around in the barn. This makes the hay that is in someones barn cleaner cleaner.'
+       }
+   
+   document.getElementById('myOut').innerHTML = myTemp
+
+}">
+<br>
+<br>
+<div id="myOut">         </div>
+
+
+<br>
+<br>
+<div id="myOuter">Output goes here</div><br>
+
+Enter y: <input type="text" id="myY" value="2"><br>
+Enter z: <input type="text" id="myZ" value="5"><br>
+
+<input type=button value="Complex if" onclick="{
+   document.getElementById('myOuter').innerHTML = ''
+   y = document.getElementById('myY').value
+   z = document.getElementById('myZ').value
+   
+   
+   if ((y==2) && (z==5)){
+      document.getElementById('myOuter').innerHTML = y + 
+        ', ' + z + ' y=2 and z=5 <br>'
+   }
+   
+   if ((y >= 2) && (z <= 5)){
+      document.getElementById('myOuter').innerHTML += y +
+         ', ' + z + ' y>=2 and z<=5 <br>'
+   }
+   
+   if ((y != 2) || (z != 5)){
+      document.getElementById('myOuter').innerHTML = y + 
+         ', ' + z + ' y!=2 or z!=5 <br>'
+   }
+   
+   
+   
+   
+}">
+
+<div id="myOutest">cats are greater than dogs</div><br>
+
+<input type="text" id="myQ" value="7"><br>
+<input type="text" id="myR" value="3"><br>
+
+<input type=button value="7, 3 cat" onclick="{
+   document.getElementById('myOutest').innerHTML = ''
+   q = document.getElementById('myQ').value
+   r = document.getElementById('myR').value
+   
+   
+   if ((q==7) && (r==3)){
+      document.getElementById('myOutest').innerHTML += q +
+         ', ' + r + ' cat <br>'
+   }
+   
+   if ((q!=7) && (r!=3)){
+      document.getElementById('myOutest').innerHTML += q +
+         ', ' + r + ' purrito <br>'
+   }
+   
+   if ((q>7) && (r>3)){
+      document.getElementById('myOutest').innerHTML += q +
+         ', ' + r + ' taco cat bacwards is taco cat <br>'
+   }
+   
+   if ((q<7) && (r<3)){
+      document.getElementById('myOutest').innerHTML += q +
+         ', ' + r + ' q is less than 7 and r is less than 3 <br>'
+   }
+   
+   if ((q>=100) && (r>=100))
+   
+   
+      
+}">
+
+<div id="myCheck">type 'fact(s)' in the space below</div><br>
+
+<input type="text" id="myS" value="123456789"><br>
+
+<input type="button" value="an abnormal cat" onclick="{
+   document.getElementById('myCheck').innerHTML = ''
+   
+   s = document.getElementById('myS').value
+   
+   
+   if (s = 'fact'){
+      myWork = 'Some cats are born with a genetic defect that makes their legs shorter than the average cats. These cats are called munchkin cats.'
+   }
+   
+   if (s = 'facts'){
+      myWork = 'Cats can be put onto leashes and walked just like dogs.'
+   }
+   
+   if (s = 'fatc'){
+      myWork = 'You spelt fact wrong.'
+   }
+   
+   if (s = 'fatcs'){
+      myWork = 'You spelt facts wrong.'
+   }
+   
+   if (s = 'ftcas'){
+      myWork = 'Cats are worth the time'
+   }
+   
+   
+   document.getElementById('myCheck').innerHTML = myWork
+
+}">
+
+   
+
+
