@@ -1,0 +1,140 @@
+<title>Moving Circle?</title>
+
+up arrow = 38 <br>
+right arrow = 39 '<br>
+down arrow = 40 <br>
+left arrow = 37 %<br>
+
+<body bgcolor=silver 
+onkeydown="{
+
+if (String.fromCharCode(event.keyCode) == 'D') {
+ document.getElementById('myD').click() 
+ }
+
+if (String.fromCharCode(event.keyCode) == 'S') {
+ document.getElementById('myS').click()
+ }
+
+if (String.fromCharCode(event.keyCode) == 'A') {
+ document.getElementById('myA').click()
+ } 
+
+if (String.fromCharCode(event.keyCode) == 'W') {
+ document.getElementById('myW').click()
+ }
+
+if (String.fromCharCode(event.keyCode) == 'Q') {
+ document.getElementById('myQ').click()
+ }
+
+if (String.fromCharCode(event.keyCode) == 'E') {
+ document.getElementById('myE').click()
+ }
+ 
+if (String.fromCharCode(event.keyCode) == 'Z') {
+ document.getElementById('myZ').click()
+ }
+ 
+if (String.fromCharCode(event.keyCode) == 'C') {
+ document.getElementById('myC').click()
+ }
+}">
+
+<input type=button id='myD' value=D onclick="{
+
+document.getElementById('my01').style.left =
+   parseInt(document.getElementById('my01').style.left) +
+   10 + 'px'
+
+}">
+
+<input type=button id= 'myS' value=S onclick="{
+
+document.getElementById('my01').style.top =
+   parseInt(document.getElementById('my01').style.top) +
+   10 + 'px'
+   
+   
+}">
+
+
+<input type=button id='myA' value=A onclick="{
+
+document.getElementById('my01').style.left =
+   parseInt(document.getElementById('my01').style.left) -
+   10 + 'px'
+   
+   
+}">
+
+<input type=button id='myW' value=W onclick="{
+
+document.getElementById('my01').style.top =
+   parseInt(document.getElementById('my01').style.top) -
+   10 + 'px'
+   
+
+}">
+
+<input type=button id='myQ' value=Q onclick="{
+
+document.getElementById('my01').style.top = 
+   parseInt(document.getElementById('my01').style.top) -
+   10 + 'px'
+
+document.getElementById('my01').style.left = 
+   parseInt(document.getElementById('my01').style.left) -
+   10 + 'px'
+   
+   
+}">
+
+<input type=button id='myE' value=E onclick="{
+
+document.getElementById('my01').style.top = 
+   parseInt(document.getElementById('my01').style.top) -
+   10 + 'px'
+
+document.getElementById('my01').style.left = 
+   parseInt(document.getElementById('my01').style.left) +
+   10 + 'px'
+   
+   
+}">
+
+<input type=button id='myZ' value=Z onclick="{
+
+document.getElementById('my01').style.top = 
+   parseInt(document.getElementById('my01').style.top) +
+   10 + 'px'
+
+document.getElementById('my01').style.left = 
+   parseInt(document.getElementById('my01').style.left) -
+   10 + 'px'
+   
+   
+}">
+
+<input type=button id='myC' value=C onclick="{
+
+document.getElementById('my01').style.top = 
+   parseInt(document.getElementById('my01').style.top) +
+   10 + 'px'
+
+document.getElementById('my01').style.left = 
+   parseInt(document.getElementById('my01').style.left) +
+   10 + 'px'
+   
+   
+}">
+
+
+<img id="my01" style="position:relative; left:0px; top:0px;"
+   src="http://www.i2clipart.com/cliparts/5/f/e/0/clipart-circle-5fe0.png">
+
+
+<br>
+
+<input type=button id=myBack value="Back" style="font-size:25px" onclick="{window.history.back()}">
+

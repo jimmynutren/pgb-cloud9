@@ -1,0 +1,89 @@
+<h1 align=center>Functions</h1>
+
+<body bgcolor=silver></body>
+<br>
+
+<input type=text id=myText01 value="I'm random text"><br><br>
+<input type=button value="Original Function" onclick="{
+
+   myAlert(document.getElementById('myText01').value)
+   
+   
+}">
+
+
+<script>
+    
+    function myAlert(myWords){
+        
+        document.getElementById('myDiv01').innerHTML = myWords
+        
+    }
+    
+    
+</script>
+
+
+
+<div id=myDiv01></div>
+
+
+<br><br>
+
+
+<button id=hide>jQuery Hide</button>
+
+<button id=show>jQuery Show</button> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js">
+
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+   /*global $*/ 
+</script>
+
+
+<p>I can dissapear and reappear!</p>
+
+<br>
+
+<style> 
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #99ff33;
+    border: solid 1px #c3c3c3;
+}
+
+#panel {
+    padding: 5px;
+    display: none;
+}
+</style>
+
+
+<body>
+<div id=flip>Click me to make another slide pop up</div>
+<div id=panel>I am the other slide that is supposed to pop up</div>
+</body>
+
+
+
+<br><br>
+
+
+
+<input type=button id=myBack value="Back" style="font-size:25px" onclick="{window.history.back()}">

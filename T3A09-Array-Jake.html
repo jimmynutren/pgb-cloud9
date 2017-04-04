@@ -1,0 +1,135 @@
+<h1 align=center>Javascript Arrays</h1>
+<body bgcolor=silver></body>
+<script>
+    
+    document.myStudent = new Array(7)
+    
+    document.myStudent[0] = 'Jimmy'
+    document.myStudent[1] = 'Susie'
+    document.myStudent[2] = 'Billy'
+    document.myStudent[3] = 'Cheesus'
+    document.myStudent[4] = 'Gemini'
+    document.myStudent[5] = 'Person'
+    document.myStudent[6] = 'Mary'
+    
+    
+</script>
+
+
+
+<input type=button value="Show Array" onclick="{
+   document.getElementById('myDiv01').innerHTML = ''
+   for (myLoop=0; myLoop <= 6; myLoop++){
+      document.getElementById('myDiv01').innerHTML += myLoop + ' ' + document.myStudent[myLoop] + '<br>'
+   }
+}">
+
+
+<div id="myDiv01">Output Here</div>
+
+
+<br><br>
+<script>
+    
+    document.myPotato = Array(6)
+    
+    document.myPotato[0] = '<font color="red">Red'
+    document.myPotato[1] = '<font color="yellow">Yellow'
+    document.myPotato[2] = '<font color="blue">Blue'
+    document.myPotato[3] = '<font color="orange">Orange'
+    document.myPotato[4] = '<font color="green">Green'
+    document.myPotato[5] = '<font color="purple">Purple'
+    
+
+</script>
+
+<input type=button value="Colour Array" onclick="{
+    document.getElementById('myDiv02').innerHTML = ''
+   for (myLoop=0; myLoop <= 5; myLoop++){
+      document.getElementById('myDiv02').innerHTML += myLoop + ' ' + document.myPotato[myLoop] + '<br>'
+   }
+
+
+
+
+
+
+
+
+}">
+
+<div id="myDiv02">Output Here</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+
+<h4>The buttons below the text correspond to the list of colors found below these buttons.</h4>
+
+<button onclick="myFunction03()" >Insert Magenta</button><br>
+
+<button onclick="myFunction04()" >Insert Dark Pink</button><br>
+
+<button onclick="myFunction05()" >Insert Light Purple</button><br>
+
+<button onclick="myFunction()" >Insert Pink Lemonade</button><br>
+
+<button onclick="myFunction02()" >Insert Sea Foam</button><br>
+
+<button onclick="myFunction01()" >Delete Color</button><br>
+
+
+
+<p id="demo"></p>
+
+<script>
+var color = ["<font color=magenta>Magenta", "<font color=#990099>Dark Pink", "<font color=#a94dff>Light Purple", "<font color=#ff4d94>Pink Lemonade", "<font color=#99ffbb>Sea Foam"];
+document.getElementById("demo").innerHTML = color;
+
+function myFunction() {
+    color.push("<font color=#ff4d94>Pink Lemonade");
+    document.getElementById("demo").innerHTML = color;
+}
+
+function myFunction01() {
+    color.pop("<font color=#ff4d94>Pink Lemonade");
+    document.getElementById("demo").innerHTML = color;
+}
+
+function myFunction02() {
+    color.push("<font color=#99ffbb>Sea Foam");
+    document.getElementById("demo").innerHTML = color;
+}
+
+function myFunction03() {
+    color.push("<font color=magenta>Magenta");
+    document.getElementById("demo").innerHTML = color;
+}
+
+function myFunction04() {
+    color.push("<font color=#990099>Dark Pink");
+    document.getElementById("demo").innerHTML = color;
+}
+
+function myFunction05() {
+    color.push("<font color=#a94dff>Light Purple");
+    document.getElementById("demo").innerHTML = color;
+}
+
+
+</script>
+
+<br><br>
+
+
+
+<input type=button id=myBack value="Back" style="font-size:25px" onclick="{window.history.back()}">
